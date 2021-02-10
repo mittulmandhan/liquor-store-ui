@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { DashboardModule } from './pages/dashboard/dashboard.module';
+import { LoginModule } from './pages/login/login.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     AppRoutingModule,
     MatIconModule,
     BrowserAnimationsModule,
-    DashboardModule
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
