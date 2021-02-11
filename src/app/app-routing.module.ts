@@ -13,7 +13,15 @@ const routes: Routes = [
   {
     path: 'signup',
     loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterModule)
-  }
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./pages/cart/cart.module').then(m => m.CartModule)
+  },
+  {
+    path: 'orders',
+    loadChildren: () => import('./pages/orders/orders.module').then(m => m.OrdersModule)
+  },
 ];
 
 @NgModule({

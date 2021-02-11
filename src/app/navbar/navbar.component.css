@@ -9,6 +9,7 @@
     font-size: 40px;
     align-items: center;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .header_top {
@@ -36,12 +37,13 @@
 .header_menu_top_item {
     font-size-adjust: 10px;
     color: lightgray;
+    cursor: pointer;
 }
 
 .header_menu_bottom_item {
     font-size: 18px;
     font-weight: 800;
-
+    cursor: pointer;
 }
 
 .header_menu_cart {
@@ -50,6 +52,7 @@
     margin-left: 8px;
     height: 50px;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .header_cart_number {

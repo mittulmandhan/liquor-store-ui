@@ -17,8 +17,7 @@ import { LoginModule } from './pages/login/login.module';
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    BrowserAnimationsModule,
-    LoginModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

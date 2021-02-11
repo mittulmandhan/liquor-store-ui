@@ -6,14 +6,14 @@
             </div>
             <img src="assets/groco_logo.png" class="header_menu_logo">
             <div class="header_menu_signin">
-                <span class="header_menu_top_item">Sign Up</span>
-                <span class="header_menu_bottom_item">Hello! Sign In</span>
+                <span class="header_menu_top_item" (click)="goToSignUp()">Sign Up</span>
+                <span class="header_menu_bottom_item" (click)="goToSignIn()">Hello! Login</span>
             </div>
             <div class="header_menu_signin">
                 <span class="header_menu_top_item">Returns</span>
-                <span class="header_menu_bottom_item">& Orders</span>
+                <span class="header_menu_bottom_item" (click)="goToOrders()">& Orders</span>
             </div>
-            <div class="header_menu_cart">
+            <div class="header_menu_cart" (click)="goToCart()">
                 <div>
                     <mat-icon>shopping_basket</mat-icon>
                 </div>
