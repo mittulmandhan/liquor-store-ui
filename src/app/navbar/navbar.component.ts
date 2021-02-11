@@ -29,4 +29,8 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/orders']);
   }
 
+  goToDashboard() {
+    this.router.navigate(['/']);
+  }
+
 }

@@ -3,6 +3,7 @@
     width: 100px;
     margin: 12px 20px 0px 2px;
     align-self: baseline;
+    cursor: pointer;
 }
 
 .header_menu_icon > mat-icon {
@@ -23,6 +24,8 @@
 
 .header_menu {
     display: flex;
+    padding: 4px 8px 8px 8px;
+    width: 100%;
 }
 
 .header_menu > div {
