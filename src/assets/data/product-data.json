@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "xbox one x 1 TB",
+        "price": 45000,
+        "image": "assets/xbox.jpg",
+        "desc": "This is an xbox"
+    },
+    {
+        "id": 2,
+        "title": "xbox one x 1 TB",
+        "price": 45000,
+        "image": "assets/xbox.jpg",
+        "desc": "This is an xbox"
+    },
+    {
+        "id": 3,
+        "title": "xbox one x 1 TB",
+        "price": 45000,
+        "image": "assets/xbox.jpg",
+        "desc": "This is an xbox"
+    }
+]
