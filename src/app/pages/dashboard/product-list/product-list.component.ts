@@ -14,17 +14,15 @@ export class ProductListComponent implements OnInit {
   products: Product[];
 
   constructor(private route: ActivatedRoute, private cartService: ShoppingCartService) {
-    this.products = this.route.snapshot.data['productList'];
+    this.products = this.route.snapshot.data.productList;
     // console.log(this.products);
   }
 
   ngOnInit(): void {
   }
 
-  addToCart(product) {
-    this.cartService.addToCart(product).subscribe(() => {
-      console.log('added to cart');
-    });
+  addToCart(product): void {
+    this.cartService.addProduct(product);
   }
 
 }

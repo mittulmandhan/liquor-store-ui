@@ -1,0 +1,8 @@
+<div class="subtotal" *ngIf="cartService.getShoppingCartLength() > 0">
+<p>Subtotal: ({{cartService.getShoppingCartLength()}} items) <strong>${{cartService.getTotal()}}</strong></p>
+<div class="subtotal_gift">
+    <input type="checkbox"/>
+   <p>This order contains a gift</p> 
+</div>
+<button mat-raised-button>Proceed to checkout</button>
+</div>

@@ -1,0 +1,19 @@
+.cart {
+    background:none;
+    display: flex;
+    /* margin: 20px; */
+    width: 100%;
+    /* min-height: 400px; */
+}
+
+.cart_left{
+    flex: 1;
+}
+.cart_empty{
+    margin: 20px 20px 400px 20px ;
+}
+.cart_right{
+justify-content: flex-end;
+margin-left: 20px;
+
+}
