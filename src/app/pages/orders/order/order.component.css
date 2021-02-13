@@ -1,0 +1,36 @@
+.right img{
+    margin-left: 1200px;
+    margin-top: -600px;
+    height: 300px;
+    width: 300px;
+  }
+  h1{
+      color: green;
+  }
+  h2{
+      color: darkgreen;
+  }
+  .vertical { 
+        border-left: 5px solid blue; 
+        height: 200px; 
+    }
+    .vertical1 { 
+        border-left: 5px solid blue; 
+        height: 100px; 
+    }
+    .vertical2 { 
+        border-left: 5px solid gray; 
+        height: 20px; 
+    }
+    .vertical3 { 
+        border-left: 5px solid white; 
+        height: 5px; 
+    }
+    .vertical4 { 
+        border-left: 5px solid gray; 
+        height: 15px; 
+    }
+    .vertical5 { 
+        border-left: 5px solid gray; 
+        height: 10px; 
+    }

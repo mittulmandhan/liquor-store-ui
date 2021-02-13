@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OrderComponent } from './order/order.component';
 import { OrdersRoutingModule } from './order-routing.module';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -9,7 +10,8 @@ import { OrdersRoutingModule } from './order-routing.module';
   declarations: [OrderComponent],
   imports: [
     CommonModule,
-    OrdersRoutingModule
+    OrdersRoutingModule,
+    MatCardModule
   ]
 })
 export class OrdersModule { }

@@ -1,0 +1,26 @@
+mat-card {
+    height: 700px;
+    width: 1400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.user-image {
+    background-image: url('/assets/userdp.jpg');
+    background-size: cover;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+table {
+    margin-top: 20px;
+}
+
+button {
+    margin: auto;
+}
