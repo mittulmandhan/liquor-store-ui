@@ -1,14 +1,14 @@
-mat-card {
-    height: 500px;
+.mat-card {
+    height: 100%;
     width: 400px;
-    margin:auto;
-    margin-top: 175px;
+    margin: auto;
+    margin-top: 60px;
     text-align: center;
 }
 
 .signup-form-field {
-    width: 80%;
-    font-size: 18px;
+    width: 65%;
+    font-size: 14px;
 }
 
 .email-field {
@@ -20,5 +20,10 @@ mat-card {
 }
 
 .card-content {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.mat-card-title {
+    margin-bottom: 50px;
 }

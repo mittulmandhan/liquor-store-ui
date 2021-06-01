@@ -7,11 +7,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { TelInputComponent } from './tel-input/tel-input.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [SignupComponent],
+  declarations: [SignupComponent, TelInputComponent],
   imports: [
     CommonModule,
     RegisterRoutingModule,
@@ -20,7 +22,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatIconModule
   ]
 })
 export class RegisterModule { }

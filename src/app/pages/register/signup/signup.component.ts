@@ -8,17 +8,25 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class SignupComponent implements OnInit {
   signupForm: FormGroup;
+  minDate: Date;
+  maxDate: Date;
   constructor(private fb: FormBuilder) {
+    const currDate = new Date();
+    this.minDate = new Date(currDate.getFullYear() - 100, currDate.getMonth(), currDate.getDay());
+    this.maxDate = new Date(currDate.getFullYear() - 25, currDate.getMonth(), currDate.getDay());
     this.signupForm = this.fb.group({
-      email: this.fb.control(null, [
-        Validators.required,
-        Validators.email,
+      firstName: this.fb.control(null, [
+        Validators.required
       ]),
-      password: this.fb.control(null, [
-        Validators.required,
-        Validators.maxLength(20),
-        Validators.minLength(6)
+      lastName: this.fb.control(null, [
+        Validators.required
       ]),
+      DOB: this.fb.control(null, [
+        Validators.required
+      ]),
+      phone: this.fb.control(null, [
+        Validators.required
+      ])
     });
   }
 
@@ -37,7 +45,7 @@ export class SignupComponent implements OnInit {
     console.log(this.password);
   }
 
-  printsignupForm(): void {
+  printSignupForm(): void {
     console.log(this.signupForm);
   }
 

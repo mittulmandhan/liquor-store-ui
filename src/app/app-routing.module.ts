@@ -5,11 +5,15 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule)
+    loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterModule)
   },
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: 'signup',
