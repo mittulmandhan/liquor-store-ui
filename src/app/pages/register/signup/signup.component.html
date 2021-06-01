@@ -5,14 +5,17 @@
             <mat-form-field class="signup-form-field" appearance="outline">
                 <mat-label>First Name</mat-label>
                 <input matInput placeholder="Ex. Mittul" formControlName="firstName">
+                <mat-hint>Min 2 Characters</mat-hint>
             </mat-form-field>
             <mat-form-field class="signup-form-field" appearance="outline">
                 <mat-label>Last Name</mat-label>
                 <input matInput placeholder="Ex. Mandhan" formControlName="lastName">
+                <mat-hint>Min 2 Characters</mat-hint>
             </mat-form-field>
             <mat-form-field class="signup-form-field" appearance="outline">
                 <mat-label>Date of Birth</mat-label>
                 <input matInput formControlName="DOB" [min]="minDate" [max]="maxDate" [matDatepicker]="picker">
+                <mat-hint>Eligibilty is Min 25 years</mat-hint>
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
@@ -20,6 +23,7 @@
                 <mat-label>Phone number</mat-label>
                 <input matInput placeholder="Ex. 9210367475" formControlName="phone">
                 <mat-icon matSuffix>phone</mat-icon>
+                <mat-hint>10 Digit Mobile Number</mat-hint>
             </mat-form-field>
             <br>
             <button mat-raised-button class="signup-button" color="primary" (click)="printSignupForm()">Sign Up</button>
