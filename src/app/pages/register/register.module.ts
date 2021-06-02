@@ -11,9 +11,10 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { TelInputComponent } from './tel-input/tel-input.component';
 import { MatIconModule } from '@angular/material/icon';
+import { ConfirmOtpComponent } from './confirm-otp/confirm-otp.component';
 
 @NgModule({
-  declarations: [SignupComponent, TelInputComponent],
+  declarations: [SignupComponent, TelInputComponent, ConfirmOtpComponent],
   imports: [
     CommonModule,
     RegisterRoutingModule,
